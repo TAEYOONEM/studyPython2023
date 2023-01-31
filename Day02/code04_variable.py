@@ -15,3 +15,4 @@ print(type(val))
 # 변수명 단어들의 조합
 plant_major_upper_code = 'U13TEMP'
 print(id(plant_major_upper_code))
+
