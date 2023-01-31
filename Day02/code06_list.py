@@ -23,6 +23,7 @@ arr2 = [1.1,2.2,3.3]
 arr3 = ['Hello',13,'World!',True]
 print(arr3)
 print(type(arr3))
+print('arr1의 2번 인덱스 값'+str(arr1[2]))
 
 arr4 = [] # 빈 리스트
 arr5 = list()
