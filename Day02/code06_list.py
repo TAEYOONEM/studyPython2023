@@ -27,3 +27,18 @@ print(type(arr3))
 arr4 = [] # 빈 리스트
 arr5 = list()
 print(arr5)
+
+arr6 = [1,2,3,4,[6,7,8,[9,10]]]
+print(arr6)
+
+arr7 = [[1,2,3,4],[5,6,7,8]]
+print(arr7)
+
+# 튜플
+tuple1 = (1,2,3,4)
+print(tuple1)
+
+arr5.append(4)
+print(arr5)
+
+
