@@ -41,4 +41,3 @@ print(tuple1)
 arr5.append(4)
 print(arr5)
 
-
