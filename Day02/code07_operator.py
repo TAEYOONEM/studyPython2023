@@ -76,9 +76,42 @@ print(title[0])
 # title[0] = 'P' # 문자열에서는 값변경 X
 print('P'+title[1:])
 
+# 일반적인 문자형 리스트
 text = ['p','y','t','h','o','n']
 text[0] = 'P'
 print(text)
+
+# 문자열 포맷팅
+print("I'm so happy {0} to you, {1}!! ".format(2, 'Hey'))
+# 최신식 문자열 포맷팅
+preword = 3
+sayHello = 'Hey'
+print(f"I'm so happy {preword} to you, {sayHello}!! ")
+
+pi = 3.141592
+print(f'파이는 {pi}입니다.')
+print(f'파이는 {pi:0.2f}입니다.')
+print(f'파이는 {pi:10.3f}입니다.')
+
+# 문자열을 특정문자로 자르기
+full_name = 'Lee Tae. Yoon'
+vals = full_name.split() # 스페이스(공백)으로 자르기 
+print(vals)
+print(type(vals))
+vals = full_name.split('.') # .으로 지정
+print(vals)
+
+print(full_name.replace('Lee Tae.','Marshall'))
+
+# 문자열 공백 없애기
+hi = '          Hello~ Bye~          '
+print(hi.lstrip()+ '|')
+print(hi.rstrip()+ '|')
+print(hi.strip()+ '|')
+
+print(full_name.index('a'))
+
+
 
 
 
