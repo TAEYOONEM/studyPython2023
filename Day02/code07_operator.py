@@ -109,10 +109,18 @@ print(hi.lstrip()+ '|')
 print(hi.rstrip()+ '|')
 print(hi.strip()+ '|')
 
+# 문자열에서 값을 찾기
 print(full_name.index('a'))
 
+print(full_name.find('Z')) # 찾는게 없으면 -1
+print(full_name.find('a'))
 
+# 찾는 단어의 개수
+print(full_name.count('e'))
 
+# 모든 단어를 대문자/소문자로 변경
+print(full_name.upper())
+print(full_name.lower())
 
-
-
+# 연산자 우선순위
+print((3 + 4) * 2)
