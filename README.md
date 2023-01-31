@@ -22,6 +22,12 @@ print('Hello Python!!') # 콘솔출력 함수
     - 연산자
 
 ```python
+# 변수
+val = 1
+
+# 자료형
+print(type(val)) # <class : 'int'>
+
 # 문자열 포맷팅
 pi = 3.141592
 print(f'파이는 {pi}입니다.') # 파이는 3.141592입니다.
