@@ -1,3 +1,4 @@
+# while문
 hit = 0
 
 while 1 :
