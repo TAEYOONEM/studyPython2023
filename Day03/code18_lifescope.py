@@ -9,5 +9,3 @@ def vartest(x) :
 a = vartest(a)
 print(a)
 
-# a = lambda x,y : x+y
-# print(a(1,2))
