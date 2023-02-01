@@ -3,6 +3,7 @@
 # global cnt
 # cnt = 0
 
+# 백준 25501
 def recursion(s, l, r):
     global cnt
     cnt += 1
