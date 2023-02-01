@@ -13,10 +13,15 @@ print(f'sum ={sum}')
 vals = [i for i in range(1,11)]
 print(vals)
 
+# continue / break
 num = 0
 for i in vals : 
     num += 1 
     if num % 2 == 0 :
         continue
+        # break
     else : 
         print(num,'번 수는',i)
+
+
+
