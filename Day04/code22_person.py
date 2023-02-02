@@ -1,6 +1,8 @@
 # 클래스 생성
 class Person:
     def __init__(self) :
+        self.색상 : 빨간색
+        
         self.name = '익명'
         self.height = ''
         self.gender = ''
@@ -14,14 +16,6 @@ class Person:
             self.state = '뛰다'
         elif option == '멈춰' :
             self.state = '멈춤'
-
-    def fuc(a) :
-        if a is None :
-            pass
-
-a = 
-b =  None
-print(a,b)
 
 taeyoon = Person() # 인스턴스
 taeyoon.walk('뛰어')
