@@ -23,14 +23,20 @@ class Person:
             self.state = '멈춤'
         print(f'{self.state}')
 
+# 2. 생성자외 매직메서드(펑션) __str__
+    def __str__(self) -> str:
+        return f'출력: 이름은 {self.name}, 성별은 {self.gender} 입니다.'
+
 # taeyoon = Person() # 인스턴스
 # taeyoon.walk()
 # print(f"{taeyoon.state}")
 
 # 1. 초기화 후 객체생성
-# hong = Person()
-# hong.walk()
+hong = Person()
+hong.walk()
+print(hong)
 
 # 2. 파라미터를 받는 생성자 실행
 ashely = Person('ashely','160','Female')
 print(ashely.height)
+print(ashely)
