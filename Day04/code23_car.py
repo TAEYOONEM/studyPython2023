@@ -1,5 +1,4 @@
 # 자동차 클래스 
-import os
 
 class Car :
     number = '46저 2906'
@@ -15,7 +14,7 @@ class Car :
     def set_number(self,number) :
         self.__number = number
 
-    # 만들때 init 보다 먼저나옴
+    # 만들때 init 보다 먼저나옴 , 상속
     # def __new__(cls) :
     #     print("__new__")
     #     return super().__new__(cls)
@@ -34,6 +33,7 @@ print(mycar)
 
 yourcar = Car("a15")
 print(yourcar)
+# 외부에서는 멤버 변수에 접근불가
 yourcar.__number = '54라9999'
 print(yourcar)
 yourcar.set_number('1111')
