@@ -32,9 +32,9 @@ class Person:
 # print(f"{taeyoon.state}")
 
 # 1. 초기화 후 객체생성
-hong = Person()
-hong.walk()
-print(hong)
+# hong = Person()
+# hong.walk()
+# print(hong)
 
 # 2. 파라미터를 받는 생성자 실행
 ashely = Person('ashely','160','Female')
