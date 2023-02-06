@@ -5,11 +5,14 @@ class Car :
     __color = 'white'
     __plate_number = ''
     __prodoct_year = 1900
-
+    
     def __str__(self) :
         return f'부모클래스'
 
-    def rub(self) :
+    def get_name(self) :
+        return self.__name
+
+    def run(self) :
         return f'차가 달립니다.'
     
     def stop(self) :
