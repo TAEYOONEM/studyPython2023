@@ -4,7 +4,7 @@ class Statis():
         self.m = []
         self.cnt = 0 
         self.max_cnt = 0
-        self.ii = []
+        self.ii = 0
 
         for i in range(self.n) :
             self.m .append(int(input()))
@@ -21,7 +21,12 @@ class Statis():
     def mode(self) :
         for i in range(self.n) : 
             if self.m[i] == self.m[i+1] :
-                cnt += 1
+                self.cnt += 1
+            elif((self.m[i] != self.m[i+1])) :
+                if(self.max_cnt < self.cnt) :
+                    self.max_cnt = self.cnt
+                elif(self.max_cnt = self.cnt) :
+                    self.ii = 
 
 
     def ran(self) :
