@@ -5,10 +5,12 @@ class Statis():
         self.cnt = 0 
         self.max_cnt = 0
         self.ii = 0
+        self.mm = []
 
         for i in range(self.n) :
             self.m .append(int(input()))
         self.m.sort()
+    
     def mean(self) : 
         return round(sum(self.m) / self.n)
 
@@ -19,18 +21,25 @@ class Statis():
             return self.m[self.n//2]
 
     def mode(self) :
-        for i in range(self.n) : 
+        if self.n == 1 :
+            self.mm.append(self.m[0])
+        for i in range(self.n-1) : 
             if self.m[i] == self.m[i+1] :
                 self.cnt += 1
-            elif((self.m[i] != self.m[i+1])) :
-                if(self.max_cnt < self.cnt) :
-                    self.max_cnt = self.cnt
-                elif(self.max_cnt = self.cnt) :
-                    self.ii = 
-
-
+            if self.cnt > self.max_cnt :
+                self.max_cnt = self.cnt
+                self.cnt = 0
+                self.mm = []
+                self.mm.append(self.m[i])
+            if self.cnt == self.max_cnt :
+                self.mm.append(self.m[i])
+        if len(self.mm) == 1:
+            return self.mm[0]
+        else :
+            return self.mm[1]
+    
     def ran(self) :
         return self.m[self.n-1] - self.m[0]
 
 a = Statis()
-print(a.mode())
+print(a.mean(),a.median(),a.mode(),a.ran())
