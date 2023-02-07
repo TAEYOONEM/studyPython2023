@@ -1,4 +1,3 @@
-class Size() :
-    weight : int = None
-    height : int = None    
-
+size_rank = { "name" : ,
+            
+            }
