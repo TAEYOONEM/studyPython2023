@@ -1,12 +1,13 @@
-class SizeRank() :
-    w,h = 0  
-    rank = 
+m,n = map(int,input().split())
+arr = list()
 
-sizerank = SizeRank()
-n = int(input())
-for i in range(n) :
-    sizerank.w[i],sizerank.h[i] = int(input().split(' '))
-print(sizerank.w)
+#0 : 미판별 1: 소수x 2:소수
 
-arr = list(map(int,input().split('\n')))
-print(arr)
+for i in range(2,n+1) :
+    arr[i] = 0
+
+for i in range(2,n+1) :
+    if arr[i] != 0 :
+        continue
+    for j in range(2,)    
+    
