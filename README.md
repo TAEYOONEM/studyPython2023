@@ -87,6 +87,13 @@ print(f'파이는 {pi:10.3f}입니다.') # 파이는         3.142입니다.
     - 웹 크롤링
         - 기상청 오늘의 날씨 크롤링
         - 데이터포털 OpenAPI 크롤링
-    - 자료구조 추가    
+        - BeautifulSoup 크롤링
+
+![실행화면](C:/Source/studyPython2023/images/jupyter_folium.png)
+
+
+## 9일차
+1. 파이썬 응용    
     - 원폼 개발(GUI)
-    - 응용 학습
+        - GUI 개발(PyQt)
+    - 자료구조 추가
