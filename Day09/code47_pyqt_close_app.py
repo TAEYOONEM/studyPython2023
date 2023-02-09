@@ -16,6 +16,9 @@ class MyApp(QWidget) :
         btn = QPushButton('quit',self)
         btn.move(320, 170)
         btn.resize(btn.sizeHint())
+        
+        # 버튼 툴팁
+        btn.setToolTip('이거 누르면 그냥 꺼져요. <b>조심</b>하세요!!')
         btn.clicked.connect(QCoreApplication.instance().quit)
 
         
