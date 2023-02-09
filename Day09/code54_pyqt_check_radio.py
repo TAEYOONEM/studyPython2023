@@ -15,15 +15,34 @@ class MyApp(QWidget) :
         cbShowTitle.toggle()
         cbShowTitle.stateChanged.connect(self.changeTitle)
         
+        cbKorea = QCheckBox('한국',self)
+        cbKorea.move(20,60)
+        cbKorea.stateChanged.connect(self.checkKorea)
+
+        rbMale = QRadioButton('남성',self)
+        rbMale.move(150,20)
+        rbMale.setChecked(True)
+        rbFemale = QRadioButton('여성',self)
+        rbFemale.move(150,40)
+        
+        
+    
         # 필수 설정
         self.setWindowTitle('QCheckBox')
         self.setGeometry(300, 300, 400, 200)
         self.show()
+    
+    def checkKorea(self,state):
+            if state == Qt.CheckState.Checked:
+                self.setWindowTitle('나는 한국인')
+            else :
+                self.setWindowTitle('나는 머지?')
+
     def changeTitle(self, state):
-        if state == Qt.Checked:
-            self.setWindowTitle('QCheckBox')
+        if state == Qt.CheckState.Checked:  # Qt.Checked도 가능
+            self.setWindowTitle('체크박스 체크')
         else:
-            self.setWindowTitle(' ')
+            self.setWindowTitle('체크박스 체크해제')
 
 
 
