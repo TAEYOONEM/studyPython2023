@@ -1,15 +1,23 @@
-m,n = map(int,input().split())
-arr = list()
+class Point() :
+    x = 0
+    y = 0
 
-for i in range(0,n+1) :
-    arr.append(0)
+n = int(input())    
+arr = [_ for _ in range(n)]
+ 
+for i in range(n) :
+    arr[i] = Point()
+    arr[i].x,arr[i].y = list(map(int,input().split()))
 
-for i in range(2,n+1) :
-    if arr[i] != 0 :
-        continue
-    for j in range(2*i,n+1,i) :
-        arr[j] = 1
+temp = Point()
 
-for i in range(m,n+1) :
-    if(arr[i] == 0) :
-        print(i)
+for i in range(n-1) :
+    for j in range(i+1,n) :
+        if arr[i].x > arr[j].x :
+            temp = arr[j]     
+    arr[i] = temp
+
+for i in range(n) :
+    print(arr[i].x)
+
+
